@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Flexbox Pricing Table</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chivo&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.ico">
+  <style>
+    .pricing-container {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-content: center;
+      height: 100vh;
+    }
+
+    body {
+      font-family: 'Sono', sans-serif;
+      background: rgb(248, 227, 251);
+      background: radial-gradient(circle, rgba(248, 227, 251, 1) 59%, rgba(220, 174, 238, 1) 100%);
+    }
+
+    li {
+      list-style: none;
+    }
+
+    .pricing-plan {
+      border: 5px solid whitesmoke;
+      background: rgb(251, 227, 232);
+      background: radial-gradient(circle, rgba(251, 227, 232, 1) 59%, rgba(238, 174, 202, 1) 100%);
+      width: 300px;
+      height: 300px;
+      border-radius: 30px;
+    }
+
+    .plan-title {
+      background: rgb(238, 174, 202);
+      background: linear-gradient(90deg, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+      font-weight: bold;
+      border-radius: 15px 50px;
+      width: 100px;
+      text-align: center;
+      margin: auto;
+      margin-top: 20px;
+      padding: 10px;
+      color: whitesmoke;
+      font-size: large;
+      font-weight: bold;
+    }
+
+    .plan-price {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 30px;
+      font-weight: bolder;
+      color: #8076a3;
+    }
+
+    .plan-button {
+      margin-top: 20px;
+      margin-left: 115px;
+      border: 0;
+      border-radius: 50px;
+      background-color: white;
+      color: #94bbe9;
+      font-family: 'Chivo', sans-serif;
+      padding: 10px;
+    }
+
+    .plan-button:hover {
+      background-color: #94bbe9;
+      color: white;
+    }
+
+    .plan-features {
+      color: #8076a3;
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+    /* Hint: What can you do with a media query and flexbox? */
+    @media (max-width: 1250px) {
+      .pricing-container {
+        flex-direction: column;
+        height: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="pricing-container">
+    <div class="pricing-plan">
+      <div class="plan-title">Basic</div>
+      <div class="plan-price">$9.99/month</div>
+      <ul class="plan-features">
+        <li>✔️ 10GB Storage</li>
+        <li>✔️ 1 User</li>
+        <li>⛔ Support</li>
+      </ul>
+      <button class="plan-button">Sign Up</a>
+    </div>
+    <div class="pricing-plan">
+      <div class="plan-title">Standard</div>
+      <div class="plan-price">$19.99/month</div>
+      <ul class="plan-features">
+        <li>✔️ 50GB Storage</li>
+        <li>✔️ 5 Users</li>
+        <li>✔️ Phone &amp; Email Support</li>
+      </ul>
+      <button class="plan-button">Sign Up</a>
+    </div>
+    <div class="pricing-plan">
+      <div class="plan-title">Premium</div>
+      <div class="plan-price">$49.99/month</div>
+      <ul class="plan-features">
+        <li>✔️ 100GB Storage</li>
+        <li>✔️ 10 Users</li>
+        <li>✔️ 24/7 Support</li>
+      </ul>
+      <button class="plan-button">Sign Up</a>
+    </div>
+  </div>
+
+</body>
+
+</html>
